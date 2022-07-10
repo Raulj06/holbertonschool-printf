@@ -68,3 +68,52 @@ int print_percent(va_list ap)
 
 	return (count);
 }
+
+/**
+  * print_digits - prints integer
+  *
+  * @ap: argument pointer
+  *
+  * Return: count of numbers printed
+  */
+int print_digits(va_list ap)
+{
+	int num = 0, count = 0;
+
+	num = va_arg(ap, int);
+	count += print_int(num);
+
+	return (count);
+}
+
+/**
+ * print_int - prints  integer
+ *
+ * @n: number to be printed
+ *
+ * Return: count of numbers printed
+ */
+int print_int(int n)
+{
+	int count = 1;
+	unsigned int num = 0;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		count++;
+		num = n * -1;
+	}
+
+	else
+	{
+		num = n;
+	}
+
+	if (num / 10)
+	{
+		count += print_int(num / 10);
+	}
+	_putchar((num % 10) + 48);
+	return (count);
+}
