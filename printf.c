@@ -23,5 +23,5 @@ int _printf(const char *format, ...)
 	num_of_char = conv_spec(format, ap);
 
 	va_end(ap);
-	return (num_of_chars);
+	return (num_of_char);
 }
