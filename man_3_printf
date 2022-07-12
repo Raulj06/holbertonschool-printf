@@ -1,1 +1,10 @@
-yo yo whats up
+.TH _PRINTF 3 2021-07-12
+
+.SH NAME
+.B _printf \- formatted output conversion
+
+.SH SYNOPSIS
+.B #include "main.h"
+
+.B int _printf(const char *\fIformat\fR, ...);
+.SH DESCRIPTION
