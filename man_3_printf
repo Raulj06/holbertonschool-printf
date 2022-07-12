@@ -1,4 +1,4 @@
-.TH _PRINTF 3 2022-07-12 man 3
+.TH man 3 2022-07-12 "_printf man page"
 
 .SH NAME
 .B _printf \- formatted output conversion
