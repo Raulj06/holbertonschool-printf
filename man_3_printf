@@ -11,3 +11,6 @@
 function writes output to stdout, the standard output, Writes output under 
 the control of a format string that specifies how subsequent arguments are converted for output.
 
+.SH
+.B Return value
+On successful return, these functions return the number of characters printed, excluding the null byte used to end output to strings.
