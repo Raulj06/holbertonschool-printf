@@ -87,7 +87,7 @@ int function_call(char c, va_list ap)
 		if (converter[i].specifier == c)
 		{
 			count += converter[i].f(ap);
-			return (count);
+			return (void);
 		}
 	}
 	_putchar(c);
