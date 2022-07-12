@@ -43,8 +43,18 @@ The int argument is converted to signed decimal notation.
 
 .SH BUGS
 No known bugs.
+.SH EXAMPLE
+  To print an integer:
 
+	       _printf("%i", 2022);
+  
+ To print a character:
 
+	      _printf("%c", 'n');
+        
+ To print a string:
 
-
-
+	    _printf("%s", "Hello, world!");
+        
+ .SH AUTHOR
+ Raul Acosta, Gerardo Bassat
