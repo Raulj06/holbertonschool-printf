@@ -18,5 +18,17 @@ int main(void)
 	printf("3 printf: %d _printf: %d \n",l1, l2);
 	putchar('\n');
 
+	l1 = printf("%c", 'C');
+	putchar('\n');
+	l2 = _printf("%c", 'c');
+	putchar('\n');
+	printf("4 printf: %d _printf: %d \n",l1, l2);
+	putchar('\n');
+
+	l1 = printf("Hello: %c. Hi!\n", 'Z');
+	l2 = _printf("Hello: %c. Hi!\n", 'Z');
+	printf("5 printf: %d _printf: %d \n",l1, l2);
+	putchar('\n');
+
 	return (0);
 }
