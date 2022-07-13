@@ -35,5 +35,10 @@ int main(void)
 	printf("6 printf: %d _printf: %d \n",l1, l2);
 	putchar('\n');
 
+	l1 = printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'c', 'k', "add ", "LOL", 'g', "g", "", "hi", 'r', ", Mary", '\n');
+	l2 = _printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'c', 'k', "add ", "LOL", 'g', "g", "", "hi", 'r', ", Mary", '\n');
+	printf("7 printf: %d _printf: %d \n",l1, l2);
+	putchar('\n');
+
 	return (0);
 }
