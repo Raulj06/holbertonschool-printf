@@ -30,5 +30,10 @@ int main(void)
 	printf("5 printf: %d _printf: %d \n",l1, l2);
 	putchar('\n');
 
+	l1 = printf("casting: %c\n", 48);
+	l2 = _printf("casting: %c\n", 48);
+	printf("6 printf: %d _printf: %d \n",l1, l2);
+	putchar('\n');
+
 	return (0);
 }
