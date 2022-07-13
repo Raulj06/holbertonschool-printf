@@ -36,3 +36,13 @@ Written by Raul J. Acosta and Gerardo Bassat as part of our printf Holberton Sch
 - main.c
   - this file was used for test
   
+  ## Functions
+  
+  int valid_conversion(char c):
+  - This function gets a character and checks to see if it’s a validated conversion specifier of our printf and returns “1” if it’s a validated specifier otherwise     returns “0”
+  
+  int function_call(char c, va_list ap):
+  - This function gets a variadic arguments list and the specifier that was validated in the previous function and calls upon the functions that is require for the specifier an passes on the argument.
+
+  int conv_spec(const char *format, va_list ap):
+   - This function gets a variadic arguments list and the format string. It runs the string printing characters and checking for any conversion specifiers.
